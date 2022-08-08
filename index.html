@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Calendar</title>
+    <link rel="stylesheet" href="./index.css">
+    <script src="./index.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-1b93190375e9ccc259df3a57c1abc0e64599724ae30d7ea4c6877eb615f89387.js"></script>
 
+</head>
+<body>
+    <div class="calendar">
+        <div class="header">
+            <a data-action="prev-month" href="javascript:void(0)" title="Previous Month"><i></i></a>
+            <div class="text" data-render="month-year"></div>
+            <a data-action="next-month" href="javascript:void(0)" title="Next Month"><i></i></a>
+        </div>
+        <div class="months" data-flow="left">
+            <div class="month month-a">
+                <div class="render render-a"></div>
+            </div>
+            <div class="month month-b">
+                <div class="render render-b"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Events by date reflected on ids, NOTE: January = 0, December = 11 -->
+
+    <div id="14-1-2022" class="events">
+        <p class="day-date-content">Monday | 14/02/22</p>
+        <div class="event-inner">
+            <h6 class="period">PD-1 <span class="time">06:10 - 06:50</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-2 <span class="time">07:00 - 07:40</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-3 <span class="time">09:20 - 10:05</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-4 <span class="time">10:10 - 10:55</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-5 <span class="time">11:25 - 12:10</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+
+            <h6 class="period">PD-6 <span class="time">12:15 - 13:00</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+        </div>
+
+        <span id="event-close" onclick='closeFunction("14-1-2022")'>CLOSE</span>
+    </div>
+
+    <div id="15-1-2022" class="events">
+        <p class="day-date-content">Monday | 15/02/22</p>
+        <div class="event-inner">
+            <h6 class="period">PD-1 <span class="time">06:10 - 06:50</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-2 <span class="time">07:00 - 07:40</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-3 <span class="time">09:20 - 10:05</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-4 <span class="time">10:10 - 10:55</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-5 <span class="time">11:25 - 12:10</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+
+            <h6 class="period">PD-6 <span class="time">12:15 - 13:00</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+        </div>
+
+        <span id="event-close" onclick='closeFunction("15-1-2022")'>CLOSE</span>
+    </div>
+
+    <div id="16-1-2022" class="events">
+        <p class="day-date-content">Monday | 16/02/22</p>
+        <div class="event-inner">
+            <h6 class="period">PD-1 <span class="time">06:10 - 06:50</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-2 <span class="time">07:00 - 07:40</span></h6>
+            <p class="event"> <strong>BPET-</strong> Fire Man Lift/Rope Work/ 60mtrs Sprint </p>
+
+            <h6 class="period">PD-3 <span class="time">09:20 - 10:05</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-4 <span class="time">10:10 - 10:55</span></h6>
+            <p class="event"> <strong>AD-</strong> Zhurtebgo Jogchet tiso Lampa sum </p>
+
+            <h6 class="period">PD-5 <span class="time">11:25 - 12:10</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+
+            <h6 class="period">PD-6 <span class="time">12:15 - 13:00</span></h6>
+            <p class="event"> <strong>7.62mm LMG-</strong> Stripping & Assembling </p>
+        </div>
+
+        <span id="event-close" onclick='closeFunction("16-1-2022")'>CLOSE</span>
+    </div>
+
+</body>
+</html>
